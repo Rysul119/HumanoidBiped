@@ -1,5 +1,5 @@
 # HumanoidBiped
-This project is to create a custom humanoid [Gym](https://gym.openai.com/) environment for Reinforcement learning training using [Pybullet](https://pybullet.org/wordpress/) physics engine. The environment will load a [MJCF](http://mujoco.org/book/modeling.html) `xml` file for the robot model. The environment has a `observation space` of 32 values (ranging from -inf to inf) and `action space` of 12 values (ranging from -1 to 1). Both of the spaces are continuous. In order to control movement of the humanoid robot, `setJointMotorControl2` is used so that the the joints move with the given torques.
+This project is to create a custom humanoid [Gym](https://gym.openai.com/) environment for Reinforcement learning training using [Pybullet](https://pybullet.org/wordpress/) physics engine. The environment will load a [MJCF](http://mujoco.org/book/modeling.html) `xml` file for the robot model. The environment has a `observation space` of dimension 32 (ranging from -inf to inf) and `action space` of dimension 12 (ranging from -1 to 1). Both of the spaces are continuous. In order to control movement of the humanoid robot, `setJointMotorControl2` is used so that the the joints move with the given torques.
 This is the humanoid biped:
 
 ![Snapshot of the model structure](https://github.com/Rysul119/HumanoidBiped/blob/master/assets/snap.png)
