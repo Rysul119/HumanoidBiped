@@ -10,7 +10,7 @@ import os
 
 
 # a humanoid biped custom environment class for gym
-class humanoidBiped:
+class humanoidBiped(gym.Env):
     metadata = {
         'render.modes': ['human', 'rgb_array'],
         'video.frames_per_second': 50
