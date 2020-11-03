@@ -126,8 +126,8 @@ class humanoidBiped(gym.Env):
 
     def reset(self):
         # reset the simulation < check
+	self._p.configureDebugVisualizer(p.COV_ENABLE_RENDERING, 0)
         self._p.resetSimulation()
-        self._p.configureDebugVisualizer(p.COV_ENABLE_RENDERING, 0)
         self._p.setGravity(0, 0, -10)
         p.setTimeStep(self.dt)
         urdfRootPath = "/Users/rysul/URDFs"
